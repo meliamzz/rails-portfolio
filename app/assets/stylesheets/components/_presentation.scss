@@ -1,0 +1,41 @@
+.title-header {
+  padding-top: 30vh;
+  height: 85%;
+  text-align: center;
+  h1, h2 {
+    font-family: 'El Messiri', sans-serif !important;
+    padding: 2em !important;
+  }
+  h1 {
+    font-size: 2em !important;
+    letter-spacing: 0.5em;
+    font-weight: bold !important;
+    color: black;
+  }
+  h2 {
+    font-size: 1.5em !important;
+    letter-spacing: 0.3em;
+    color: black;
+  }
+  .transparent {
+    opacity: 0;
+  }
+  .cancel-transparent {
+    transition-duration: 3s;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-header {
+    h1 {
+      font-size: 1.5em !important;
+    }
+    h2 {
+      font-size: 1em !important;
+    }
+    h1, h2 {
+      padding: 1em !important;
+    }
+  }
+}
