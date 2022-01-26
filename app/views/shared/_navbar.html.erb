@@ -2,13 +2,13 @@
   <ul class="d-flex p-0">
     </div>
     <li class="nav-desktop">
-      <%= link_to "À PROPOS", root_path(anchor: "about") %>
+      <%= link_to "À PROPOS", about_path %>
     </li>
     <li class="nav-desktop">
-      <%= link_to "COMPÉTENCES", root_path(anchor: "skills") %>
+      <%= link_to "COMPÉTENCES", skills_path %>
     </li>
     <li class="div-logo d-flex">
-      <%= link_to "M", root_path, id: "logo-letter" %>
+      <%= link_to "M", root_path, id: "logo-letter", data: { turbolinks: false } %>
     </li>
     <li class="nav-desktop">
       <%= link_to "PROJETS", projects_path %>
@@ -26,15 +26,15 @@
 
 <nav class="mobile position-fixed nav-mobile">
   <div class="div-logo">
-    <%= link_to "M", root_path, id: "logo-letter" %>
+    <%= link_to "M", root_path, id: "logo-letter", data: { turbolinks: false } %>
   </div>
   <div>
     <ul class="p-0 d-flex">
       <li>
-        <%= link_to "À PROPOS", root_path(anchor: "about") %>
+        <%= link_to "À PROPOS", about_path %>
       </li>
       <li>
-        <%= link_to "COMPÉTENCES", root_path(anchor: "skills") %>
+        <%= link_to "COMPÉTENCES", skills_path %>
       </li>
       <li>
         <%= link_to "PROJETS", projects_path %>
