@@ -50,12 +50,20 @@ nav {
 .mobile {
   .div-logo {
     margin: auto;
+    width: 70px;
+    height: 70px;
     a {
       text-decoration: none;
       color: black;
       font-size: 0.8em;
       font-family: 'Roboto', sans-serif !important;
     }
+  }
+  #logo-letter {
+    line-height: 70px;
+    font-size: 3em;
+    width: 70px;
+    height: 70px;
   }
 }
 
