@@ -15,7 +15,7 @@
       <%= link_to "PROJETS", projects_path %>
     </li>
     <li class="nav-desktop">
-      <%= link_to "CONTACT", contact_index_path %>
+      <%= link_to "CONTACT", new_contact_path %>
     </li>
     <% if user_signed_in? %>
         <li>
@@ -27,25 +27,25 @@
 
 <nav class="mobile position-fixed nav-mobile">
   <div class="div-logo">
-    <a href="" id="logo-letter">M</a>
+    <%= link_to "M", root_path, id: "logo-letter" %>
   </div>
   <div>
     <ul class="p-0 d-flex">
       <li>
-        <a href="#about">À PROPOS</a>
+        <%= link_to "À PROPOS", root_path(anchor: "about") %>
       </li>
       <li>
-        <a href="#projects">PROJETS</a>
+        <%= link_to "COMPÉTENCES", root_path(anchor: "skills") %>
       </li>
       <li>
-        <a href="#skills">COMPÉTENCES</a>
+        <%= link_to "PROJETS", projects_path %>
       </li>
       <li>
-        <a href="#contact">CONTACT</a>
+        <%= link_to "CONTACT", new_contact_path %>
       </li>
       <% if user_signed_in? %>
         <li>
-        <a href="">Admin</a>
+        <%= link_to "ADMIN", root_path %>
       </li>
       <% end %>
     </ul>
