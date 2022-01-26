@@ -3,20 +3,25 @@
   <ul class="d-flex p-0">
     </div>
     <li class="nav-desktop">
-      <a href="#about">À PROPOS</a>
+      <%= link_to "À PROPOS", root_path(anchor: "about") %>
     </li>
     <li class="nav-desktop">
-      <a href="#skills">COMPÉTENCES</a>
+      <%= link_to "COMPÉTENCES", root_path(anchor: "skills") %>
     </li>
     <li class="div-logo d-flex">
-      <a href="" id="logo-letter">M</a>
+      <%= link_to "M", root_path, id: "logo-letter" %>
     </li>
     <li class="nav-desktop">
-      <a href="#projects">PROJETS</a>
+      <%= link_to "PROJETS", projects_path %>
     </li>
     <li class="nav-desktop">
-      <a href="#contact">CONTACT</a>
+      <%= link_to "CONTACT", contact_index_path %>
     </li>
+    <% if user_signed_in? %>
+        <li>
+        <%= link_to "ADMIN", root_path %>
+      </li>
+      <% end %>
   </ul>
 </nav>
 
@@ -26,18 +31,23 @@
   </div>
   <div>
     <ul class="p-0 d-flex">
-      <li class="">
+      <li>
         <a href="#about">À PROPOS</a>
       </li>
-      <li class="">
+      <li>
         <a href="#projects">PROJETS</a>
       </li>
-      <li class="">
+      <li>
         <a href="#skills">COMPÉTENCES</a>
       </li>
-      <li class="">
+      <li>
         <a href="#contact">CONTACT</a>
       </li>
+      <% if user_signed_in? %>
+        <li>
+        <a href="">Admin</a>
+      </li>
+      <% end %>
     </ul>
   </div>
 </nav>
