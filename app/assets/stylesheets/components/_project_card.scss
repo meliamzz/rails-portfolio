@@ -1,0 +1,65 @@
+.projects {
+  min-height: 85vh;
+  margin-bottom: 10em;
+  padding-top: 20vh;
+  margin-bottom: 3em;
+  padding-left: 0;
+  .project-card {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.project-card a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.planthy-card {
+  background-image: url('planthy/1.png');
+  background-color: white;
+}
+
+.rezevent-card {
+  background-image: url('rezevent/1.png');
+  background-color: #E2E2E2;
+}
+
+.landing-card {
+  background-image: url('landing/1.png');
+  background-color: #E7E7EF;
+}
+
+.todolist-card {
+  background-image: url('todolist/1.png');
+  background-color: #EDE7EF;
+}
+
+.project-card:hover {
+box-shadow: inset 0px 0px 200px 200px rgba(0, 0, 0, 0.9)
+}
+
+.project-card:hover h4 {
+  opacity: 1;
+}
+
+.project-card:hover p {
+  opacity: 1;
+}
+
+h4 {
+  opacity: 0;
+  font-size: 3em !important;
+  color: white;
+}
+ .project-card p {
+  opacity: 0;
+  font-size: 1.5em !important;
+  color: white;
+ }
