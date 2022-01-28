@@ -9,4 +9,9 @@ class PagesController < ApplicationController
 
   def skills
   end
+
+  def admin
+    @messages = Contact.all
+    @projects = Project.all
+  end
 end

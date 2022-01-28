@@ -1,0 +1,20 @@
+.admin {
+  padding-top: 15vh;
+  .admin-section {
+    width: 40%;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 1em;
+    h5 {
+      letter-spacing: 5px;
+      color: white;
+      text-align: center;
+      font-weight: 900;
+      padding-bottom: 0.5em;
+      border-bottom: 3px solid white;
+    }
+  }
+  li {
+    list-style: none;
+  }
+}

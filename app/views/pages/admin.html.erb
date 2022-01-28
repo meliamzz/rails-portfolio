@@ -1,0 +1,28 @@
+<div class="admin d-flex justify-content-around">
+  <div class="admin-section">
+    <h5>MESSAGES</h5>
+    <ul>
+      <% @messages.each do |message| %>
+        <li>
+          <p>Nom: <%= message.name %></p>
+          <p>Numéro: <%= message.phone %></p>
+          <p>Email: <%= message.email %></p>
+          <p>Message: <br><%= message.message %></p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div class="admin-section">
+  <h5>PROJETS</h5>
+    <ul>
+      <% @projects.each do |project| %>
+        <li>
+          <p><%= project.name %></p>
+          <p><%= project.description %></p>
+        </li>
+      <% end %>
+    </ul>
+    <%= link_to "Ajouter un projet" %>
+  </div>
+</div>
