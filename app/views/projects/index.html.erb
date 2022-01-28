@@ -1,6 +1,6 @@
 <ul class="projects row">
   <% @projects.each do |project| %>
-    <li class="project-card <%= project.img_folder%>-card col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+    <li class="projects-card <%= project.img_folder %>-card-1 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
       <%= link_to project_path(project) do %>
           <h4><%= project.name %></h4>
           <p><%= project.language %></p>

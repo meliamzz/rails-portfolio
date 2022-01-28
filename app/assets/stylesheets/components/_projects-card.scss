@@ -1,0 +1,37 @@
+.projects-card {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  a {
+    text-decoration: none;
+    text-align: center;
+  }
+  h4 {
+    opacity: 0;
+    font-size: 3em !important;
+    color: white;
+  }
+  p {
+    opacity: 0;
+    font-size: 1.5em !important;
+    color: white;
+  }
+}
+
+
+.projects-card:hover {
+box-shadow: inset 0px 0px 200px 200px rgba(0, 0, 0, 0.9)
+}
+
+.projects-card:hover h4 {
+  opacity: 1;
+}
+
+.projects-card:hover p {
+  opacity: 1;
+}
