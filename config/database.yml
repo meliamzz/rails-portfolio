@@ -81,4 +81,6 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
+  database: rails_portfolio_production
+  username: rails_portfolio
+  password: <%= ENV['RAILS_PORTFOLIO_DATABASE_PASSWORD'] %>
