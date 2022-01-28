@@ -120,3 +120,22 @@
 }
 
 ////////////////////////////////////////
+
+@media (max-width: 768px) {
+  .project {
+    h3 {
+      font-size: 1.7em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .project {
+    h3 {
+      font-size: 1.5em;
+    }
+  }
+}
