@@ -11,3 +11,15 @@
 .project-card-banner {
   background-size: cover;
 }
+
+@media (max-width: 768px) {
+  .project-card {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .project-card {
+    height: 30vh;
+  }
+}
