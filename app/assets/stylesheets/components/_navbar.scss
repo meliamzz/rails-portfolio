@@ -50,10 +50,12 @@ nav {
 
 .mobile {
   .div-logo {
-    margin: auto;
-    width: 70px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: 70px;
     a {
+      text-align: center;
       text-decoration: none;
       color: black;
       font-size: 0.8em;
