@@ -7,14 +7,6 @@
     padding: 1em;
     max-height: 80vh;
     overflow: scroll;
-    h5 {
-      letter-spacing: 5px;
-      color: white;
-      text-align: center;
-      font-weight: 900;
-      padding-bottom: 0.5em;
-      border-bottom: 3px solid white;
-    }
   }
   ul {
     padding-left: 0;
@@ -31,10 +23,18 @@
     border-radius: 10px;
     padding: 1em;
   }
+  h5 {
+      letter-spacing: 5px;
+      color: white;
+      text-align: center;
+      font-weight: 900;
+      padding-bottom: 0.5em;
+      border-bottom: 3px solid white;
+    }
 }
 
 .message-options {
-  width: 15%;
+  width: 10%;
   text-align: right;
   i {
     color: white;
@@ -42,5 +42,15 @@
 }
 
 .message-infos {
-  width: 85%;
+  width: 90%;
+}
+
+.read-messages {
+  margin: 2em auto;
+  padding: 1em;
+  width: 70%;
+  max-height: 80vh;
+  border: 3px solid white;
+  border-radius: 10px;
+  overflow: scroll;
 }
