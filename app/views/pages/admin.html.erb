@@ -1,13 +1,19 @@
 <div class="admin d-flex justify-content-around">
   <div class="admin-section">
-    <h5>MESSAGES</h5>
+    <h5>NOUVEAUX MESSAGES</h5>
     <ul>
       <% @messages.each do |message| %>
-        <li>
-          <p>Nom: <%= message.name %></p>
-          <p>Numéro: <%= message.phone %></p>
-          <p>Email: <%= message.email %></p>
-          <p>Message: <br><%= message.message %></p>
+        <li class="message d-flex justify-content-between">
+          <div class="message-infos">
+            <p>Nom: <%= message.name %></p>
+            <p>Numéro: <%= message.phone %></p>
+            <p>Email: <%= message.email %></p>
+            <p>Message: <br><%= message.message %></p>
+          </div>
+          <div class="message-options">
+            <i class="far fa-check-circle fa-lg"></i>
+            <i class="far fa-times-circle fa-lg"></i>
+          </div>
         </li>
       <% end %>
     </ul>
@@ -17,12 +23,12 @@
   <h5>PROJETS</h5>
     <ul>
       <% @projects.each do |project| %>
-        <li>
+        <li class="projet">
           <p><%= project.name %></p>
           <p><%= project.description %></p>
         </li>
       <% end %>
     </ul>
-    <%= link_to "Ajouter un projet" %>
+    <%= link_to "Ajouter un projet"%>
   </div>
 </div>

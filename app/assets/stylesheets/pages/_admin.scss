@@ -5,6 +5,8 @@
     border: 3px solid white;
     border-radius: 10px;
     padding: 1em;
+    max-height: 80vh;
+    overflow: scroll;
     h5 {
       letter-spacing: 5px;
       color: white;
@@ -14,7 +16,38 @@
       border-bottom: 3px solid white;
     }
   }
+  ul {
+    padding-left: 0;
+  }
   li {
     list-style: none;
+    margin-bottom: 1em;
+    p {
+      margin-bottom: 0;
+    }
   }
+  .message {
+    border: 2px solid white !important;
+    border-radius: 10px;
+    padding: 1em;
+  }
+}
+
+.message-options {
+  width: 15%;
+  text-align: right;
+  i {
+    color: white;
+  }
+}
+
+.message-infos {
+  width: 85%;
+}
+
+.messages-read {
+  border: white 3px solid;
+  border-radius: 10px;
+  height: 100px;
+  width: 100%;
 }
