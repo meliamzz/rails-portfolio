@@ -24,11 +24,11 @@
     <ul>
       <% @projects.each do |project| %>
         <li class="projet">
-          <p><%= project.name %></p>
-          <p><%= project.description %></p>
+          <p class="text-center"><%= project.name %></p>
+          <p class="text-justify"><%= project.description %></p>
         </li>
       <% end %>
     </ul>
-    <%= link_to "Ajouter un projet"%>
+
   </div>
 </div>

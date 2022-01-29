@@ -26,8 +26,8 @@
       margin-bottom: 0;
     }
   }
-  .message {
-    border: 2px solid white !important;
+  .message, .projet {
+    border: 2px solid white;
     border-radius: 10px;
     padding: 1em;
   }
@@ -43,11 +43,4 @@
 
 .message-infos {
   width: 85%;
-}
-
-.messages-read {
-  border: white 3px solid;
-  border-radius: 10px;
-  height: 100px;
-  width: 100%;
 }
