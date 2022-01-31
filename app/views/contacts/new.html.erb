@@ -2,10 +2,10 @@
   <div class="contact-form col-10 col-sm-8 col-md-6 col-lg-4 mx-auto">
     <h5 class="text-center">Contactez-moi</h5>
     <%= simple_form_for @contact do |f| %>
-      <%= f.input :name, label: "Nom" %>
+      <%= f.input :name, label: "Nom", error: "Merci d'indiquer votre nom" %>
       <%= f.input :phone, label: "Numéro de téléphone" %>
-      <%= f.input :email %>
-      <%= f.input :message, label: "Votre message" %>
+      <%= f.input :email, error: "Merci d'indiquer votre adresse mail" %>
+      <%= f.input :message, label: "Votre message", error: "Ce champ ne peut être vide" %>
       <%= f.button :submit, "Envoyer!" %>
     <% end %>
   </div>
