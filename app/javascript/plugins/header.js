@@ -11,7 +11,7 @@ const nameApparition = () => {
 let i = 0;
 const typingEffect = () => {
   let workName = "DEVELOPPEUSE WEB FULLSTACK"
-  let workTag = document.querySelector('h2')
+  let workTag = document.querySelector('.work-name')
   let speed = 150;
   if (workTag) {
     if (i < workName.length) {
