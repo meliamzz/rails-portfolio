@@ -1,12 +1,12 @@
 .admin {
   padding-top: 15vh;
   .admin-section {
-    width: 40%;
     border: 3px solid white;
     border-radius: 10px;
     padding: 1em;
     max-height: 80vh;
     overflow: scroll;
+    margin: 1em auto;
   }
   ul {
     padding-left: 0;
@@ -18,7 +18,7 @@
       margin-bottom: 0;
     }
   }
-  .message, .projet {
+  .message, .projet, .read-messages {
     border: 2px solid white;
     border-radius: 10px;
     padding: 1em;
@@ -47,10 +47,7 @@
 
 .read-messages {
   margin: 2em auto;
-  padding: 1em;
-  width: 70%;
   max-height: 80vh;
-  border: 3px solid white;
-  border-radius: 10px;
   overflow: scroll;
+  width: 100wh;
 }

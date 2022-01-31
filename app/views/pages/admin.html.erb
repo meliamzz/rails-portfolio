@@ -1,59 +1,62 @@
-<div class="admin d-flex justify-content-around flex-wrap">
-  <div class="admin-section">
-    <h5>NOUVEAUX MESSAGES</h5>
-    <ul>
-      <% @messages.each do |message| %>
-        <% if message.read == false %>
-        <li class="message d-flex justify-content-between">
-          <div class="message-infos">
-            <p>Nom: <%= message.name %></p>
-            <p>Numéro: <%= message.phone %></p>
-            <p>Email: <%= message.email %></p>
-            <p>Message: <br><%= message.message %></p>
-          </div>
-          <div class="message-options">
-            <%= link_to contact_path(message), method: :patch do %>
-              <i class="far fa-check-circle fa-lg"></i>
-            <% end %>
-          </div>
-        </li>
-        <% end %>
-      <% end %>
-    </ul>
-  </div>
-
-  <div class="admin-section">
-  <h5>PROJETS</h5>
-    <ul>
-      <% @projects.each do |project| %>
-        <li class="projet">
-          <p class=""><%= project.name %></p>
-          <p class="text-justify"><%= project.description %></p>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-
-  <div class="read-messages">
-    <h5>MESSAGES LUS</h5>
-    <ul>
-      <% @messages.each do |message| %>
-        <% if message.read? %>
+<div class="admin">
+  <div class="row">
+    <div class="admin-section col-10 col-md-5">
+      <h5>NOUVEAUX MESSAGES</h5>
+      <ul>
+        <% @messages.each do |message| %>
+          <% if message.read == false %>
           <li class="message d-flex justify-content-between">
-          <div class="message-infos">
-            <p>Nom: <%= message.name %></p>
-            <p>Numéro: <%= message.phone %></p>
-            <p>Email: <%= message.email %></p>
-            <p>Message: <br><%= message.message %></p>
-          </div>
-          <div class="message-options">
-            <%= link_to contact_path(message), method: :delete do %>
-              <i class="far fa-times-circle fa-lg"></i>
-            <% end %>
-          </div>
-        </li>
+            <div class="message-infos">
+              <p>Nom: <%= message.name %></p>
+              <p>Numéro: <%= message.phone %></p>
+              <p>Email: <%= message.email %></p>
+              <p>Message: <br><%= message.message %></p>
+            </div>
+            <div class="message-options">
+              <%= link_to contact_path(message), method: :patch do %>
+                <i class="far fa-check-circle fa-lg"></i>
+              <% end %>
+            </div>
+          </li>
+          <% end %>
         <% end %>
-      <% end %>
-    </ul>
+      </ul>
+    </div>
+
+    <div class="admin-section col-10 col-md-5">
+    <h5>PROJETS</h5>
+      <ul>
+        <% @projects.each do |project| %>
+          <li class="projet">
+            <p class=""><%= project.name %></p>
+            <p class="text-justify"><%= project.description %></p>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="read-messages col-10">
+      <h5>MESSAGES LUS</h5>
+      <ul>
+        <% @messages.each do |message| %>
+          <% if message.read? %>
+            <li class="message d-flex justify-content-between">
+            <div class="message-infos">
+              <p>Nom: <%= message.name %></p>
+              <p>Numéro: <%= message.phone %></p>
+              <p>Email: <%= message.email %></p>
+              <p>Message: <br><%= message.message %></p>
+            </div>
+            <div class="message-options">
+              <%= link_to contact_path(message), method: :delete do %>
+                <i class="far fa-times-circle fa-lg"></i>
+              <% end %>
+            </div>
+          </li>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
   </div>
 </div>
