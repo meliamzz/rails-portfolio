@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :about, :skills]
+  skip_before_action :authenticate_user!, only: [:home, :about, :skills, :images]
 
   def home
   end
@@ -13,5 +13,8 @@ class PagesController < ApplicationController
   def admin
     @messages = Contact.all
     @projects = Project.all
+  end
+
+  def images
   end
 end

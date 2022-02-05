@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'skills', to: 'pages#skills'
   get 'admin', to: 'pages#admin'
+  get 'images', to: 'pages#images'
 
   resources :projects
 
