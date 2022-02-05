@@ -1,0 +1,11 @@
+<% @features.each do |feature| %>
+
+<div class="pt-5">
+  <div class="pt-5">
+    <div class="pt-5">
+      <%= feature.description %>
+      <%= cl_image_tag feature.photo.key %>
+    </div>
+  </div>
+</div>
+<% end %>

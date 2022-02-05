@@ -1,0 +1,9 @@
+<%= simple_form_for [ @project, @feature ], class: "pt-5" do |f| %>
+<div class="pt-5"><div class="pt-5">
+
+  <%= f.input :description, label: "Description" %>
+  <%= f.input :photo, as: :file %>
+  <%= f.button :submit, "Ajouter" %>
+
+</div></div>
+<% end %>
