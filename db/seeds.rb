@@ -62,4 +62,14 @@ Project.create!(
   feature2: "D'un simple clic, les tâches réalisées sont marquée comme faites!"
 )
 
+Project.create!(
+  name: "Portfolio",
+  language: "Ruby on Rails",
+  img_folder: "portfolio",
+  description: "Ce portfolio, décrit mon parcours, mes projets!",
+  feature1: "Listing de tous les projets réalisés, avec les languages utilisés",
+  feature2: "Formulaire de contact"
+)
+
+
 puts "Project created!"
