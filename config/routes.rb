@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   get 'admin', to: 'pages#admin'
   get 'images', to: 'pages#images'
 
-  resources :projects
+  resources :projects do
+    resources :features
+  end
 
   resources :contacts
 end
