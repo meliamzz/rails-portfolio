@@ -7,4 +7,29 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find(params[:id])
   end
+
+  def new
+    @project = Project.new
+  end
+
+  def create
+    @project = Project.new(project_params)
+    if @project.save
+      redirect_to project_path(@project)
+    else
+      render :new
+    end
+  end
+
+  def destroy
+    @project = Project.find(params[:id])
+    @project.destroy
+    redirect_to admin_path
+  end
+
+  private
+
+  def project_params
+    params.require(:project).permit(:name, :language, :description)
+  end
 end
