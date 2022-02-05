@@ -1,0 +1,28 @@
+<footer class="d-flex align-items-center justify-content-end flex-column">
+  <div class="reseaux">
+    <%= link_to "https://www.linkedin.com/in/melia-mazouzi/", :target => "_blank" do %>
+      <i class="fab fa-linkedin-in"></i>
+    <% end %>
+
+    <%= link_to "https://www.malt.fr/profile/meliamazouzi", :target => "_blank" do %>
+      <i class="fas fa-viruses"></i>
+    <% end %>
+
+    <%= link_to "https://github.com/meliamzz", :target => "_blank" do %>
+      <i class="fab fa-github"></i>
+    <% end %>
+
+    <% if user_signed_in? %>
+      <%= link_to destroy_user_session_path, method: :delete do %>
+        <i class="fas fa-sign-out-alt"></i>
+      <% end %>
+    <% else%>
+      <%= link_to admin_path do %>
+        <i class="fas fa-user-lock"></i>
+      <% end %>
+    <% end %>
+
+
+  </div>
+  <p>Site réalisé par Mélia Mazouzi - 2021</p>
+</footer>
