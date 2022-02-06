@@ -1,10 +1,1 @@
-<div class="new-feature padding-top">
-  <div class="form col-10 col-sm-8 col-md-6 col-lg-4 mx-auto">
-    <%= simple_form_for [ @project, @feature ], class: "pt-5" do |f| %>
-    <h5 class>Fonctionnalité</h5>
-      <%= f.input :description, label: "Description" %>
-      <%= f.input :photo, as: :file %>
-      <%= f.button :submit, "Ajouter" %>
-    <% end %>
-  </div>
-</div>
+<%= render "form", feature: @feature %>
