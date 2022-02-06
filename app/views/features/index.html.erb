@@ -1,11 +1,12 @@
 <% @features.each do |feature| %>
-
 <div class="pt-5">
   <div class="pt-5">
-    <div class="pt-5">
+    <div class="pt-5 d-flex">
       <%= feature.description %>
-      <%= cl_image_tag feature.photo.key %>
+      <%= cl_image_tag feature.photo.key, width: 200, height: 100, crop: :fill %>
     </div>
   </div>
 </div>
 <% end %>
+
+<%= link_to 'Nouvelle feature', new_project_feature_path %>

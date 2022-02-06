@@ -25,16 +25,26 @@
     </div>
 
     <div class="admin-section col-10 col-md-5">
-    <h5>PROJETS</h5>
+      <div class="admin-header mb-3 d-flex flex-column align-items-center">
+      <h5 class="w-100">PROJETS</h5>
+      <%= link_to "+ Nouveau projet", new_project_path, class: "btn-white" %>
+      </div>
       <ul>
-        <%= link_to "Ajouter un projet", new_project_path %>
-        <% @projects.each do |project| %>
-          <li class="projet">
-            <p class=""><%= project.name %></p>
-            <p class="text-justify"><%= project.description %></p>
-            <%= link_to "Supprimer", project_path(project), method: :delete %>
-          </li>
-        <% end %>
+        <div class="row justify-content-around">
+          <% @projects.each do |project| %>
+            <li class="projet col-8 d-flex justify-content-between">
+              <p><%= project.name %></p>
+              <div class="edit-btn">
+                <%= link_to project_path(project), method: :delete do %>
+                  <i class="far fa-trash-alt"></i>
+                <% end %>
+                <%= link_to project_path(project) do %>
+                  <i class="far fa-edit"></i>
+                <% end %>
+              </div>
+            </li>
+          <% end %>
+        </div>
       </ul>
     </div>
   </div>

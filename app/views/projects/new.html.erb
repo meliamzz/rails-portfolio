@@ -1,11 +1,12 @@
-<div class="new-project">
-
-  <div class="new-project-form col-10 col-sm-8 col-md-6 col-lg-4 mx-auto mt-5">
-    <h4>Ajouter un nouveau projet</h4>
+<div class="project">
+  <div class="form col-10 col-sm-8 col-md-6 col-lg-4 mx-auto mt-5">
+    <h4 class="text-center">Nouveau projet</h4>
     <%= simple_form_for @project do |f| %>
       <%= f.input :name, label: "Nom du projet", error: "Merci d'indiquer le nom du projet" %>
+      <%= f.input :photo, as: :file, label: "Photo de couverture" %>
       <%= f.input :language, label: "Language(s)" %>
       <%= f.input :description, error: "Merci d'indiquer une description" %>
+      <%= f.input :photo_description, as: :file, label: "Photo descriptive" %>
       <%= f.button :submit, "Créer!" %>
     <% end %>
   </div>
