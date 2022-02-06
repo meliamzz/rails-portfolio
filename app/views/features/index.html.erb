@@ -1,8 +1,10 @@
 <div class="features padding-top container">
-  <div class="row justify-content-around">
+  <%= link_to 'Ajouter fonctionnalité', new_project_feature_path, class: "btn-white" %>
+  <div class="row justify-content-between">
+
   <% @features.each do |feature| %>
 
-    <div class="card col-12 col-sm-5 col-md-4 col-lg-3 p-0 m-2">
+    <div class="card col-10 col-sm-5 col-md-5 col-lg-3 p-0 mt-4 mb-4 mx-auto">
       <div class="card-img-top div-img" style="background-image: url('<%= cl_image_path feature.photo.key %>')">
       </div>
       <div class="card-body text-center">
@@ -17,5 +19,5 @@
     </div>
   <% end %>
   </div>
-  <%= link_to 'Ajouter fonctionnalité', new_project_feature_path, class: "btn-white" %>
+
 </div>

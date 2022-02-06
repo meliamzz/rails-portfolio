@@ -17,6 +17,12 @@
     p {
       margin-bottom: 0;
     }
+    a {
+      color: black;
+      &:hover {
+        font-weight: bold;
+      }
+    }
   }
   .message, .projet, .read-messages {
     border: 2px solid white;
