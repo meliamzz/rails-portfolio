@@ -1,12 +1,21 @@
-<% @features.each do |feature| %>
-<div class="pt-5">
-  <div class="pt-5">
-    <div class="pt-5 d-flex">
-      <%= feature.description %>
-      <%= cl_image_tag feature.photo.key, width: 200, height: 100, crop: :fill %>
-    </div>
-  </div>
-</div>
-<% end %>
+<div class="features padding-top container">
+  <div class="row justify-content-around">
+  <% @features.each do |feature| %>
 
-<%= link_to 'Nouvelle feature', new_project_feature_path %>
+    <div class="card col-12 col-sm-5 col-md-4 col-lg-3 p-0 m-2">
+      <div class="card-img-top div-img" style="background-image: url('<%= cl_image_path feature.photo.key %>')">
+      </div>
+      <div class="card-body text-center">
+        <p class="card-text"><%= feature.description %></p>
+        <%= link_to edit_project_feature_path(@project, feature.id) do %>
+          <i class="far fa-edit fa-lg fa-beige"></i>
+        <% end %>
+        <%= link_to project_feature_path(@project, feature.id), method: :delete do %>
+          <i class="far fa-trash-alt fa-lg fa-beige"></i>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+  </div>
+  <%= link_to 'Ajouter fonctionnalité', new_project_feature_path, class: "btn-white" %>
+</div>

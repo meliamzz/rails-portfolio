@@ -1,6 +1,6 @@
 .form {
   height: 100%;
-  padding: 3em 1em;
+  padding: 2em 1em;
   border: 3px solid white;
   border-radius: 10px;
   .btn {
@@ -9,8 +9,16 @@
   input, .btn, textarea {
     border-radius: 5px;
   }
-
   abbr {
     text-decoration: none;
+  }
+  label {
+    margin-bottom: 0;
+  }
+  .form-control-file {
+    background-color: white;
+  }
+  h5 {
+    text-align: center;
   }
 }

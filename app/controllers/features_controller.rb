@@ -20,6 +20,11 @@ class FeaturesController < ApplicationController
     @features = @project.features
   end
 
+  def edit
+    @project = Project.find(params[:project_id])
+    @feature = Feature.find(params[:id])
+  end
+
   private
 
   def feature_params

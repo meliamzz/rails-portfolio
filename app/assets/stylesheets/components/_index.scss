@@ -8,10 +8,33 @@
 @import "footer";
 @import "form";
 @import "btn-white";
+@import "font-awesome";
 
 @import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap');
 
 body {
   background-color: #EAE6DF;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.padding-top {
+  padding-top: 20vh;
+}
+
+.div-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+  width: 100%;
+}
+
+.card-body {
+  border-top: 3px beige solid;
 }

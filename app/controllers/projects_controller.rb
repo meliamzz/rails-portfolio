@@ -27,6 +27,10 @@ class ProjectsController < ApplicationController
     redirect_to admin_path
   end
 
+  def edit
+    @project = Project.find(params[:id])
+  end
+
   private
 
   def project_params
