@@ -1,43 +1,40 @@
-.admin {
-  padding-top: 15vh;
-  .admin-section {
-    border: 3px solid white;
-    border-radius: 10px;
-    padding: 1em;
-    max-height: 80vh;
-    overflow: scroll;
-    margin: 1em auto;
-  }
-  ul {
-    padding-left: 0;
-  }
-  li {
-    list-style: none;
-    margin-bottom: 1em;
-    p {
-      margin-bottom: 0;
-    }
-    a {
-      color: black;
-      &:hover {
-        font-weight: bold;
-      }
-    }
-  }
-  .message, .projet, .read-messages {
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 1em;
-  }
-  h5 {
-      letter-spacing: 5px;
-      color: white;
-      text-align: center;
-      font-weight: 900;
-      padding-bottom: 0.5em;
-      border-bottom: 3px solid white;
-    }
+.admin-section {
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 1em;
+  max-height: 80vh;
+  overflow: scroll;
+  margin: 1em auto;
 }
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+  margin-bottom: 1em;
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    color: black;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+.message, .projet, .read-messages {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 1em;
+}
+h5 {
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid white;
+  }
 
 .message-options {
   width: 10%;
