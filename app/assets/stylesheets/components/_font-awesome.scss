@@ -1,13 +1,41 @@
+.fa-reseaux {
+  color: black;
+  background-color: #F7F7F7;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-align: center;
+}
+
 .fa-white {
   color: white;
-  &:hover {
-    font-weight: bold;
-  }
 }
 
 .fa-beige {
   color: #EAE6DF;
-  &:hover {
+}
+
+.fa-white, .fa-beige, .fa-reseaux {
+    &:hover {
     font-weight: bold;
   }
+}
+
+.fa-html5 {
+  color: #DB4A26;
+}
+
+.fa-css3-alt {
+  color: #1293CA;
+}
+
+.fa-bootstrap {
+  color: #523976;
+}
+
+.fa-js-square {
+  color: #EFD81A;
+}
+
+.fa-react {
+  color: #04D1F2;
 }

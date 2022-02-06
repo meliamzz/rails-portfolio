@@ -33,7 +33,9 @@ class ProjectsController < ApplicationController
 
   def update
     @project = Project.find(params[:id])
-    @project.update(params[:project])
+    @project.update(project_params)
+
+    redirect_to admin_path
   end
 
   private

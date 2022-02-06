@@ -1,24 +1,24 @@
 <footer class="d-flex align-items-center justify-content-end flex-column">
   <div class="reseaux">
     <%= link_to "https://www.linkedin.com/in/melia-mazouzi/", :target => "_blank" do %>
-      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-linkedin-in fa-reseaux"></i>
     <% end %>
 
     <%= link_to "https://www.malt.fr/profile/meliamazouzi", :target => "_blank" do %>
-      <i class="fas fa-viruses"></i>
+      <i class="fas fa-viruses fa-reseaux"></i>
     <% end %>
 
     <%= link_to "https://github.com/meliamzz", :target => "_blank" do %>
-      <i class="fab fa-github"></i>
+      <i class="fab fa-github fa-reseaux"></i>
     <% end %>
 
     <% if user_signed_in? %>
       <%= link_to destroy_user_session_path, method: :delete do %>
-        <i class="fas fa-sign-out-alt"></i>
+        <i class="fas fa-sign-out-alt fa-reseaux"></i>
       <% end %>
     <% else%>
       <%= link_to admin_path do %>
-        <i class="fas fa-user-lock"></i>
+        <i class="fas fa-user-lock fa-reseaux"></i>
       <% end %>
     <% end %>
 

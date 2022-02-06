@@ -3,10 +3,8 @@
   padding: 2em 1em;
   border: 3px solid white;
   border-radius: 10px;
-  .btn {
-    background-color: white;
-  }
-  input, .btn, textarea {
+  margin: auto;
+  input, textarea {
     border-radius: 5px;
   }
   abbr {
@@ -20,5 +18,8 @@
   }
   h5 {
     text-align: center;
+  }
+  a {
+    color: black;
   }
 }
