@@ -81,3 +81,11 @@ nav {
     display: none;
   }
 }
+
+@media (min-width:1200px) {
+  nav {
+    li a {
+      font-size: 1.2em;
+    }
+  }
+}
