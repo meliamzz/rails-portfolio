@@ -1,12 +1,12 @@
 <div class="container project">
-  <div class="section col-11 col-lg-8 col-xl-12">
+  <div class="section col-11 col-lg-8 col-xl-10">
     <div class="project-card project-card-banner <%= @project.img_folder %>-card" style="background-image: url('<%= cl_image_path @project.photo_description.key %>')"></div>
     <h3><%= @project.name %></h3>
     <p><%= @project.description %></p>
   </div>
 
   <% @project.features.each do |feature| %>
-    <div class="section section col-11 col-lg-8 col-xl-12">
+    <div class="section section col-11 col-lg-8 col-xl-10">
     <div class="project-card <%= @project.img_folder %>-card" style="background-image: url('<%= cl_image_path feature.photo.key %>')"></div>
     <p><%= feature.description %></p>
   </div>
