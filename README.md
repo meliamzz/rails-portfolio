@@ -11,6 +11,6 @@ Déployé en ligne, il est accessible en cliquant directement sur ce <a href="ht
 Les languages utilisés pour ce portfolio : 
 `Ruby On Rails`, `Bootstrap`, `Javascript`, `SCSS`
 
-## 👤 Contributeurs
+## 👥 Contributeurs
 
 <a href="https://github.com/meliamzz">Mélia Mazouzi</a>
