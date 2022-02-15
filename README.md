@@ -2,7 +2,8 @@
 
 ## ✨ Présentation
 
-Hello, je m'appelle Mélia, et ici je vous présente mon Portfolio, vous pouvez retrouver mon histoire, mes projets et de quoi me contacter! <br>
+Hello, je m'appelle Mélia, et ici je vous présente mon Portfolio, vous pouvez retrouver mon histoire, mes projets et de quoi me contacter!
+
 Déployé en ligne, il est accessible en cliquant directement sur ce <a href="http://www.melia-mazouzi.com">lien!</a>
 
 ## ✨ Technologies
