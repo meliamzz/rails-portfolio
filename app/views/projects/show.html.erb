@@ -3,6 +3,11 @@
     <div class="project-card project-card-banner <%= @project.img_folder %>-card" style="background-image: url('<%= cl_image_path @project.photo_description.key %>')"></div>
     <h3><%= @project.name %></h3>
     <p><%= @project.description %></p>
+    <div class="links d-flex justify-content-around w-50 mx-auto">
+    <p><%= link_to "GITHUB", @project.github, target: "_blank" %></p>
+    <span>|</span>
+    <p><%= link_to "SITE", @project.url, target: "_blank" %></p>
+    </div>
   </div>
 
   <% @project.features.each do |feature| %>
